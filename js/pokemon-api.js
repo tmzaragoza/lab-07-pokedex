@@ -6,4 +6,4 @@ const pokemonApi = {
     }
 };
 
-export default pokemonAmi
+export default pokemonApi;

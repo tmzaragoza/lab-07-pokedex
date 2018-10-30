@@ -1,11 +1,13 @@
-import html from '../html.js';
+import html from './html.js';
+
 
 const tableBody = document.getElementById('pokemon-body');
 
-export default pokemonTable;
+
 
 function rowTemplater(pokemon) {
-    return html` <tr>
+    return html`<tr>
+        <img src = "../assets/pokemon/${pokemon.id}.png"/>
         <td>${pokemon.pokemon}</td>
         <td>${pokemon.type1}</td>
         <td>${pokemon.type2}</td>
@@ -23,3 +25,4 @@ const pokemonsTable = {
     }
 };
 
+export default pokemonsTable;
