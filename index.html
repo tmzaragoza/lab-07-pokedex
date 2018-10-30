@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon Lab</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pokemon-table.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/logo.png">
+        <h1>Pokemon Lab</h1>
+    </header>
+    
+    <main>    
+        <section id="filter" class="secondary">
+            <h2>Search for Pokemon</h2>
+            <label>
+                Name:
+                <input required id="filter-name">
+            </label>
+            <label>
+                Type:
+                <input required id="filter-type">
+            </label>
+        </section>
+
+        <section>
+            <h2>Pokemon</h2>
+            <table>
+                <thead id="pokemon-header">
+                    <tr>
+                        <td>Image</td>
+                        <td class="sort" data-property="pokemon">Name</td>
+                        <td class="sort" data-property="type_1">Type 1</td>
+                        <td class="sort" data-property="type_2">Type 2</td>
+                        <td class="sort" data-property="attack">Attack</td>
+                        <td class="sort" data-property="defense">Defence</td>
+                        <td class="sort" data-property="hp">HP</td>
+                    </tr>
+                </thead>
+                <tbody id="pokemon-body"></tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
