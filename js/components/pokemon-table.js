@@ -24,6 +24,12 @@ const pokemonsTable = {
             const tr = rowTemplater(pokemon);
             tableBody.appendChild(tr);
         });
+    },
+    update(pokemons) {
+        while(tableBody.lastElementChild) {
+            tableBody.lastElementChild.remove();
+        }
+        pokemonsTable.init(pokemons);    
     }
 };
 
