@@ -16,7 +16,8 @@ pokemonsFilter.init(function(nameFilter) {
             const hasName = !nameFilter
             || pokemon.pokemon.toLowerCase().includes(nameFilter);
 
-            const has
+            
+
             return hasName;
         });
     } else {
