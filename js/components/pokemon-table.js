@@ -1,4 +1,4 @@
-import html from './html.js';
+import html from '../html.js';
 
 
 const tableBody = document.getElementById('pokemon-body');
@@ -7,12 +7,14 @@ const tableBody = document.getElementById('pokemon-body');
 
 function rowTemplater(pokemon) {
     return html`<tr>
-        <img src = "../assets/pokemon/${pokemon.id}.png"/>
+        <td><img src="../assets/pokemon/${pokemon.id}.png"/></td>
         <td>${pokemon.pokemon}</td>
-        <td>${pokemon.type1}</td>
-        <td>${pokemon.type2}</td>
+        <td>${pokemon.type_1}</td>
+        <td>${pokemon.type_2}</td>
         <td>${pokemon.defense}</td>
         <td>${pokemon.attack}</td>
+        <td>${pokemon.hp}</td>
+
     </tr>`;
 }
 
