@@ -1,4 +1,8 @@
 import pokemonApi from '../pokemon-api.js';
+import pokemonTable from './pokemon-table.js';
 
-const pokemon = pokemonApi.getAll();
+const pokemons = pokemonApi.getAll();
+
+pokemonTable.init(pokemons);
+
 
