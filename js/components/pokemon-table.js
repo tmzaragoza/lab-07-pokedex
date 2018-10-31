@@ -7,7 +7,7 @@ const tableBody = document.getElementById('pokemon-body');
 
 function rowTemplater(pokemon) {
     return html`<tr>
-        <td id="image"><img src="${pokemon.url_image}"/></td>
+        <td id="image"><img src="${pokemon.url_image}" height=75px/></td>
         <td>${pokemon.pokemon}</td>
         <td>${pokemon.type_1}</td>
         <td>${pokemon.type_2}</td>
