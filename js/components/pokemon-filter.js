@@ -7,23 +7,23 @@ const hpInput = document.getElementById('filter-hp');
 const pokemonsFilter = {
     init(onFilter) {
         nameInput.addEventListener('keyup', function() {
-            onFilter(nameInput.value);
+            onFilter(nameInput.value, type1Input.value, type2Input.value, attackInput.value, hpInput.value);
         });
 
         type1Input.addEventListener('keyup', function() {
-            onFilter(type1Input.value);
+            onFilter(nameInput.value, type1Input.value, type2Input.value, attackInput.value, hpInput.value);
         });
 
         type2Input.addEventListener('keyup', function() {
-            onFilter(type2Input.value);
+            onFilter(nameInput.value, type1Input.value, type2Input.value, attackInput.value, hpInput.value);
         });
 
         attackInput.addEventListener('keyup', function() {
-            onFilter(attackInput.value);
+            onFilter(nameInput.value, type1Input.value, type2Input.value, attackInput.value, hpInput.value);
         });
 
         hpInput.addEventListener('keyup', function() {
-            onFilter(hpInput.value);
+            onFilter(nameInput.value, type1Input.value, type2Input.value, attackInput.value, hpInput.value);
         });
     }
 };
