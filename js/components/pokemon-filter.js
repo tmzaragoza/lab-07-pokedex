@@ -30,11 +30,3 @@ const pokemonsFilter = {
 
 export default pokemonsFilter;
 
-// // same as above, but with single listening function:
-
-        // function handleFilter() {
-        //     onFilter(nameInput.value, tagsInput.value);
-        // }
-        // nameInput.addEventListener('keyup', handleFilter);
-        // tagsInput.addEventListener('keyup', handleFilter);
-    }
