@@ -11,8 +11,8 @@ function rowTemplater(pokemon) {
         <td>${pokemon.pokemon}</td>
         <td>${pokemon.type_1}</td>
         <td>${pokemon.type_2}</td>
-        <td>${pokemon.defense}</td>
         <td>${pokemon.attack}</td>
+        <td>${pokemon.defense}</td>
         <td>${pokemon.hp}</td>
 
     </tr>`;
