@@ -4,14 +4,14 @@ body {
 header {
     background: blue;
     text-align: center;
-    font-size: 60px;
+    font-size:50px;
     color: red;  
-    border-bottom: 0px;
+    
 }
 
 #search {
     background: yellow;
     text-align: center;
     color: black;
-    
+}
 
